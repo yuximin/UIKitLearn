@@ -14,11 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        print(String(format: "%.1f", 2.5678))
-        
-        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: HomeViewController())
+        window?.rootViewController = RootTabBarController() // BaseNavigationController(rootViewController: HomeViewController())
         window?.makeKeyAndVisible()
         return true
     }
